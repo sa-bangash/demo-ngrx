@@ -1,0 +1,10 @@
+<div class="form-wrapper">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label for="valueA">A</label><br />
+    <input type="number" id="valueA" formControlName="valueA" /><br />
+    <label for="valueB">B</label><br />
+    <input type="number" id="valueB" formControlName="valueB" />
+    <input type="submit" value="Submit" />
+  </form>
+  <div>{{ sum$ | async }}</div>
+</div>
