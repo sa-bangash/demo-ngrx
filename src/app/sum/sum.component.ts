@@ -25,7 +25,6 @@ export class SumComponent implements OnInit {
     });
   }
   onSubmit() {
-    console.log(this.form.value);
     this.store.dispatch(sum(this.form.value));
   }
 }

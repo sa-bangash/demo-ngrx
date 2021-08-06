@@ -5,7 +5,7 @@ export const initialState = 0;
 
 const _sumReducer = createReducer(
   initialState,
-  on(sum, (state, { payload }) => payload.valueA + payload.valueB)
+  on(sum, (_, { payload }) => payload.valueA + payload.valueB)
 );
 
 export function sumReducer(state, action) {
